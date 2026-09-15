@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Meal Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍱 Affordable Meal Finder</h1>
+        <p>Find delicious meals within your budget</p>
+    </header>
+
+    <main>
+
+        <section class="search-box">
+
+            <input type="text" id="search" placeholder="🔍 Search for a meal...">
+
+            <input type="number" id="budget" placeholder="💰 Your budget (₹)">
+
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Chinese">Chinese</option>
+                <option value="North Indian">North Indian</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Healthy">Healthy</option>
+            </select>
+
+            <select id="vendorType">
+                <option value="">All Vendors</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Local Vendor">Local Vendor</option>
+                <option value="Home-based Seller">Home-based Seller</option>
+                <option value="Mess">Mess</option>
+                <option value="Tiffin Provider">Tiffin Provider</option>
+                <option value="Small Cafe">Small Cafe</option>
+            </select>
+
+            <button onclick="findMeals()">FIND MEALS</button>
+
+        </section>
+
+        <section>
+            <h2>Affordable Meals</h2>
+            <div id="mealContainer"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
