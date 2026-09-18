@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/meals";
+const API_URL = "http://172.20.10.4:8080/meals";
 
 async function loadMeals() {
 
